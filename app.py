@@ -14,9 +14,9 @@ import json
 from placekey.api import PlacekeyAPI
 from io import StringIO
 
-placekey_api_key = "iuFt9caOLW2XJFYLJLNt3Dc0BFQ300Pi"
-url = "https://pacekey.nyc3.digitaloceanspaces.com/placekeys_standardized%20copy%207.csv"
-zrl = "https://pacekey.nyc3.digitaloceanspaces.com/REI_09172024_standradised_with%20placekeys.csv"
+placekey_api_key = "3evKPNQovEe3AGAANqXiMr9eNp4B38Fh"
+url = "https://plackeys.nyc3.digitaloceanspaces.com/placekeys_standardized%20copy%207.csv"
+zrl = "https://plackeys.nyc3.digitaloceanspaces.com/REI_09172024_standradised_with%20placekeys.csv"
 
 # Make a request to get the first CSV file
 response = requests.get(url)
