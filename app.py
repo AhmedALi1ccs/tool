@@ -14,7 +14,7 @@ import json
 from placekey.api import PlacekeyAPI
 from io import StringIO
 
-placekey_api_key = "iuFt9caOLW2XJFYLJLNt3Dc0BFQ300Pi"
+placekey_api_key = "wAyvWugnIXxllQwx0f6qSZN2BlRGU2Cr"
 url = "https://plackeys.nyc3.digitaloceanspaces.com/placekeys_standardized%20copy%207.csv"
 zrl = "https://plackeys.nyc3.digitaloceanspaces.com/REI_09172024_standradised_with%20placekeys.csv"
 
