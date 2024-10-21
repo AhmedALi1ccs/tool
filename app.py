@@ -1024,7 +1024,7 @@ if uploaded_file is not None:
                 print(f"Extra columns: {extra_columns}")
                 # Optionally, remove extra columns if found
                 df_place = df_place.drop(columns=list(extra_columns))
-                df_place['street_address']=df_place['street_address'].str.lower()
+            df_place['street_address']=df_place['street_address'].str.lower()
             df_place['city']=df_place['city'].str.lower()
 
             # Step 5: Convert to JSON
