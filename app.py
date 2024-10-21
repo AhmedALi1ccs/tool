@@ -14,7 +14,7 @@ import json
 from placekey.api import PlacekeyAPI
 from io import StringIO
 
-placekey_api_key = "iuFt9caOLW2XJFYLJLNt3Dc0BFQ300Pi"
+placekey_api_key = "wAyvWugnIXxllQwx0f6qSZN2BlRGU2Cr"
 url = "https://plackeys.nyc3.digitaloceanspaces.com/placekeys_standardized%20copy%207.csv"
 zrl = "https://plackeys.nyc3.digitaloceanspaces.com/REI_09172024_standradised_with%20placekeys.csv"
 
@@ -1024,6 +1024,8 @@ if uploaded_file is not None:
                 print(f"Extra columns: {extra_columns}")
                 # Optionally, remove extra columns if found
                 df_place = df_place.drop(columns=list(extra_columns))
+                df_place['street_address']=df_place['street_address'].str.lower()
+            df_place['city']=df_place['city'].str.lower()
 
             # Step 5: Convert to JSON
             data_jsoned = json.loads(df_place.to_json(orient='records'))
