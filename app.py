@@ -16,7 +16,7 @@ from io import StringIO
 
 placekey_api_key = "wAyvWugnIXxllQwx0f6qSZN2BlRGU2Cr"
 url = "https://storage.cloud.google.com/rei_standradized/placekeys_standardized%20copy%207%20(2).csv"
-zrl = "gs://rei_standradized/final_rei_11-13-2024_withPlacekeys.csv"
+zrl = "https://storage.cloud.google.com/rei_standradized/final_rei_11-13-2024_withPlacekeys.csv"
 
 # Make a request to get the first CSV file
 response = requests.get(url)
