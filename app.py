@@ -6,7 +6,7 @@ import aiohttp
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
-import chardet
+#import chardet
 import os
 import concurrent.futures
 import io
