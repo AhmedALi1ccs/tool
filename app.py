@@ -747,13 +747,13 @@ if uploaded_file is not None:
             # Apply the functions to the addresses
             if mapped_columns.get('property_address') != 'none':
                 property_address_col = mapped_columns['property_address']
-                df[property_address_col].fillna('', inplace=True)
+                df[property_address_col] = df[property_address_col].fillna('')
                 df[property_address_col] = df[property_address_col].apply(preprocess_address)
                 df[property_address_col] = df[property_address_col].apply(standardize_and_normalize_address)
 
             if mapped_columns.get('mailing_address') != 'none':
                 mailing_address_col = mapped_columns['mailing_address']
-                df[mailing_address_col].fillna('', inplace=True)
+                df[mailing_address_col] = df[mailing_address_col].fillna('')
                 df[mailing_address_col] = df[mailing_address_col].apply(standardize_and_normalize_address)
 
             # Adjust cities
@@ -942,13 +942,13 @@ if uploaded_file is not None:
             # Apply the functions to the addresses
             if mapped_columns.get('property_address') != 'none':
                 property_address_col = mapped_columns['property_address']
-                df[property_address_col].fillna('', inplace=True)
+                df[property_address_col] = df[property_address_col].fillna('')
                 df[property_address_col] = df[property_address_col].apply(preprocess_address)
                 df[property_address_col] = df[property_address_col].apply(standardize_and_normalize_address)
 
             if mapped_columns.get('mailing_address') != 'none':
                 mailing_address_col = mapped_columns['mailing_address']
-                df[mailing_address_col].fillna('', inplace=True)
+                df[mailing_address_col] = df[mailing_address_col].fillna('')
                 df[mailing_address_col] = df[mailing_address_col].apply(standardize_and_normalize_address)
 
             # Adjust cities
