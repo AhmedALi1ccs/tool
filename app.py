@@ -179,7 +179,7 @@ address_patterns = [(re.compile(pattern, re.IGNORECASE), replacement) for patter
     r'\bclifs\b\.?': 'Clfs', r'\bclfs\b\.?': 'Clfs',
     r'\bclub\b\.?': 'Clb', r'\bclb\b\.?': 'Clb',
     r'\bcommon\b\.?': 'Cmn',
-    r'\btrafficway\b\.?': 'Trfy',
+    r'\btrafficway\b\.?': 'Trfy',r'\brow\b\.?': 'Row',
     r'\bcommons\b\.?': 'Cmns',
     r'\btrack\b\.?': 'Trak', r'\btracks\b\.?': 'Trak', r'\btrak\b\.?': 'Trak', r'\btrk\b\.?': 'Trak',
     r'\btrks\b\.?': 'Trak',
