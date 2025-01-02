@@ -14,7 +14,7 @@ import json
 from placekey.api import PlacekeyAPI
 from io import StringIO
 st.cache_resource.clear()
-placekey_api_key = "iVAxeJ2W9v0B8ZGxXHUSFpKxqO10OPhW"
+placekey_api_key = "kPiQScbIp1BlxMChirEljha7fh2FatF8"
 url = "https://storage.googleapis.com/rei_standradized/placekeys_standardized%20copy%207%20(2).csv"
 zrl = "https://storage.googleapis.com/rei_standradized/final_rei_11-13-2024_withPlacekeys.csv"
 
