@@ -63,7 +63,7 @@ cache_df = pd.read_csv(cache_file_path, dtype={
 
 cache_df['street_address']=cache_df['street_address'].str.lower()
 cache_df['city']=cache_df['city'].str.lower()
-
+st.cache_resource.clear()
 def clean_api_responses(data_jsoned, responses):
     print("Number of original records: ", len(data_jsoned))
     print('Total individual queries returned: ', len(responses))
